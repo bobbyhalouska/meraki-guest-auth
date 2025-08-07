@@ -11,7 +11,7 @@ export async function onRequest(context) {
     const ssid_number = '3';
     const url = `https://api.meraki.com/api/v1/networks/${network_id}/wireless/ssids/${ssid_number}/identityPsks`;
 
-    // Helper function to make API requests
+    // Helper function to make API key requests
     const makeRequest = async (method, body) => {
       const options = {
         method,
